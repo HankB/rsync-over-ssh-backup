@@ -157,7 +157,7 @@ do
     # shellcheck disable=SC2029
     ssh "${LOGNAME}@${REMOTE_HOST}" "mkdir -p ${ROOT}/redwood/$branch/$day/"
     rsync_cmd="/usr/bin/rsync -azXAS --delete -v \
-        $full_incremental --exclude '.git/' \
+        $full_incremental --exclude .git/ \
         /home/$LOGNAME/$d/ \
         ${REMOTE_HOST}:${ROOT}/redwood/$branch/$day/$d"
     echo "$rsync_cmd"
