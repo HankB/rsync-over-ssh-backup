@@ -17,3 +17,9 @@ Requirements
 * passwordless login tto remote system
 * helper script `prev_date.sh` in same directory as `ssh_mirror.sh`
 * `rsync` (no longer a default install in recent Debian versions.)
+
+Things to try
+
+* `--exclude='.git/'` (starting point) Not on olive -> oak
+* `--exclude='.git/*'`  Not on olive -> oak
+* `--exclude '.git/'` Not on olive -> oak
