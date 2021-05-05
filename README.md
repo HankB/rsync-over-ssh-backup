@@ -1,6 +1,10 @@
 # rsync-over-ssh-backup
 
-script to backup selected directories using rsync over ssh
+Script to backup selected directories using rsync over ssh.
+
+## Motivation
+
+Unable (so far) to get `rsync` to ignore `.git` directories. This project created to document current process, record results and share with some helpful Reditors.
 
 Usage: See instructions in `ssh_mirror.sh`. Ordinarily run from `cron`. Typical crontab entry:
 
